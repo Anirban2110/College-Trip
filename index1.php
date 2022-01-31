@@ -1,18 +1,14 @@
-
 <?php
 $insert=false;
 if(isset($_POST['name'])){
     $server= "localhost";
     $username= "root";
     $password= "";
-    //$dbname="thiland_trip"
-
     $conn = mysqli_connect($server,$username,$password);
 
     if(!$conn){
         die("Connection to the database failed due to ".mysqli_connect_error());
     }
-    //echo("Successfully established connection with the database");
     
     $name=$_POST["name"];
     $age=$_POST["age"];
@@ -23,10 +19,8 @@ if(isset($_POST['name'])){
 
     $sql= "INSERT INTO `thiland_trip`.`table` (`Name`, `Age`, `Gender`, `Email`, `Phone`, `Other Info`, `Date_of_insertion`)
     VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp())";
-    //echo $sql;
-
+    
     if($conn->query($sql) == true) {
-        //echo "Successfully inserted";
         $insert=true;
     }
     else {
@@ -69,8 +63,6 @@ if(isset($_POST['name'])){
         </form>
     </div>
     <script src="index.js"></script>
-    <!--INSERT INTO `table` (`S.no`, `Name`, `Age`, `Gender`, `Email`, `Phone`, `Other Info`, `Date_of_insertion`)
-     VALUES ('2', 'Ashish', '24', 'M', 'abc@gmail.com', '9087654323', 'He is Anirban\'s friend.', '');-->
 </body>
 </html>
 

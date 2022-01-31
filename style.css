@@ -1,0 +1,59 @@
+element.style{
+    flex-direction: column;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ } 
+.container{
+    max-width:80%;
+    margin: auto;
+    padding: 34px;
+}
+.container h3, p{
+    text-align: center;   
+}
+h3{
+    font-size: 36px;
+    font-family: 'Neonderthaw', cursive;
+}
+p{
+    font-size: 16px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Quintessential', cursive;
+}
+input, textarea{ 
+    width: 80%;
+    margin: 11px;
+    padding: 7px;
+    font-size: 16px;
+    border: 2px solid rgb(23, 24, 23);
+    border-radius: 23px;
+    outline: none;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    background: #45448d;
+    color: #fffdfd;
+    margin: 9px;
+    padding: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cu{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+.submit{
+    color: rgb(212, 176, 16);
+    font-size: 30px;
+}

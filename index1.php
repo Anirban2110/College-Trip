@@ -1,4 +1,4 @@
-<!--run http://localhost/Practice_php/index1.php(turn on apache, mysql on xampp) in the browser to see the front end, insert data and find it in http://localhost/phpmyadmin/(turn on mysql admin) database-->
+
 <?php
 $insert=false;
 if(isset($_POST['name'])){
